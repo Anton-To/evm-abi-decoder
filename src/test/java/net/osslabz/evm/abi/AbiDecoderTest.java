@@ -143,7 +143,6 @@ public class AbiDecoderTest {
     public void testDecodeFunctionCallTupleContainingDynamicTypes() throws IOException {
 
         // https://api-testnet.bscscan.com/api?module=contract&action=getabi&address=0xb7564227245bb161ebf4d350e1056c26801f1366&format=raw
-
         File abiJson = new File(this.getClass().getResource("/abiFiles/SereshForwarder.json").getPath());
         AbiDecoder sereshForwarderAbi = new AbiDecoder(abiJson.getAbsolutePath());
 
